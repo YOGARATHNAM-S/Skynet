@@ -26,7 +26,7 @@ function AppRoutes() {
   }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Skynet">
       <Routes>
         <Route path="/" element={<Index appUser={appUser} onSignOut={signOut} />} />
         <Route path="*" element={<NotFound />} />
